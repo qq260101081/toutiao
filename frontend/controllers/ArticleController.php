@@ -7,25 +7,19 @@ use yii\web\Controller;
 /**
  * Site controller
  */
-class SiteController extends Controller
+class ArticleController extends Controller
 {
-    /**
-     * Displays homepage.
-     *
-     * @return mixed
-     */
 
     public function actionIndex()
     {
         if(! Yii::$app->wechat->isAuthorized())
         {
-            //return $this->redirect(['weixin/index','location'=>'site/index']);
             Yii::$app->wechat->oauth->scopes(['snsapi_userinfo']);
             return Yii::$app->wechat->authorizeRequired()->send();
         }
 
         $user = Yii::$app->wechat->getUser();
-        print_r($user);
+        print_r($user);die;
         return $this->render('index');
     }
 

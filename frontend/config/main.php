@@ -36,14 +36,20 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
+        'wechat' => [
+            'class' => 'maxwen\easywechat\Wechat',
+        ],
+
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
+            'showScriptName' => false,   //隐藏index.php
             'rules' => [
+                //'<module:\w+>/<controller:\w+>/<id:\d+>' => '<module>/<controller>/view',
+                //'<controller:\w+>/<id:\d+>' => '<controller>/view',
+                '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
             ],
         ],
-        */
     ],
     'params' => $params,
 ];
