@@ -29,4 +29,8 @@ class SiteController extends Controller
         return $this->render('index');
     }
 
+    public function actionError(){
+        echo 4;
+    }
+
 }

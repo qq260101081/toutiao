@@ -69,11 +69,17 @@ AppAsset::register($this);
 </div>
 
 <footer class="footer">
-    <div class="container">
-        <p class="pull-left">&copy; My Company <?= date('Y') ?></p>
-
-        <p class="pull-right"><?= Yii::powered() ?></p>
-    </div>
+    <ul>
+        <li>
+            <a href="">创建爆文</a>
+        </li>
+        <li>
+            <a href="">发现爆文</a>
+        </li>
+        <li>
+            <a href="">我的</a>
+        </li>
+    </ul>
 </footer>
 
 <?php $this->endBody() ?>

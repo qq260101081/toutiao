@@ -15,6 +15,9 @@ return [
         'request' => [
             'csrfParam' => '_csrf-frontend',
         ],
+        'wechat' => [
+            'class' => 'maxwen\easywechat\Wechat',
+        ],
         'user' => [
             'identityClass' => 'common\models\User',
             'enableAutoLogin' => true,
@@ -36,20 +39,29 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        'wechat' => [
-            'class' => 'maxwen\easywechat\Wechat',
-        ],
 
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
-            'showScriptName' => false,   //隐藏index.php
-            'rules' => [
-                //'<module:\w+>/<controller:\w+>/<id:\d+>' => '<module>/<controller>/view',
-                //'<controller:\w+>/<id:\d+>' => '<controller>/view',
-                '<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
-            ],
         ],
+        'assetManager' => [
+            'bundles' => [
+                'yii\web\JqueryAsset' => [
+                    'js' => [],  // 去除 jquery.js
+                    'sourcePath' => null,  // 防止在 frontend/web/asset 下生产文件
+                ],
+                'yii\bootstrap\BootstrapAsset' => [
+                    'css' => [],  // 去除 bootstrap.css
+                    'sourcePath' => null, // 防止在 frontend/web/asset 下生产文件
+                ],
+                'yii\bootstrap\BootstrapPluginAsset' => [
+                    'js' => [],  // 去除 bootstrap.js
+                    'sourcePath' => null,  // 防止在 frontend/web/asset 下生产文件
+                ]
+            ],
+
+        ],
+
     ],
     'params' => $params,
 ];
