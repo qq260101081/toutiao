@@ -23,4 +23,8 @@ class ArticleController extends Controller
         return $this->render('index');
     }
 
+    public function actionTest()
+    {
+        echo 555;die;
+    }
 }

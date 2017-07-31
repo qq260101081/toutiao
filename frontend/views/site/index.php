@@ -2,52 +2,47 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = '创建我的爆文';
 ?>
-<div class="site-index">
+<div class="find-baowen-page">
+<div class="header">
+    <p>创建我的爆文</p>
+</div>
 
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
-
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
-
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-            </div>
+<div class="weui-cells weui-cells_form">
+    <div class="weui-cell">
+        <div class="weui-cell__bd">
+            <textarea class="weui-textarea" placeholder="在此粘贴您的文章链接" rows="3"></textarea>
         </div>
-
     </div>
 </div>
+
+
+<a href="javascript:;" class="weui-btn weui-btn_primary">文章中嵌入我的名片</a>
+
+
+<div class="weui-tabbar">
+    <a href="javascript:;" class="weui-tabbar__item weui-bar__item_on">
+            <i class="iconfont icon-shuxie1"></i>
+        <p class="weui-tabbar__label">创建爆文</p>
+    </a>
+
+    <a href="javascript:;" class="weui-tabbar__item">
+        <!--<img src="./images/icon_tabbar.png" alt="" class="weui-tabbar__icon">-->
+        <i class="iconfont icon-faxian1"></i>
+        <p class="weui-tabbar__label">发现爆文</p>
+    </a>
+
+    <a href="javascript:;" class="weui-tabbar__item">
+        <i class="iconfont icon-yuedu2"></i>
+        <p class="weui-tabbar__label">谁阅读</p>
+    </a>
+
+    <a href="javascript:;" class="weui-tabbar__item">
+        <i class="iconfont icon-wo"></i>
+        <p class="weui-tabbar__label">我</p>
+    </a>
+
+</div>
+</div>
+

@@ -1,19 +1,14 @@
-html,
 body {
-    height: 100%;
+    font-size: 1rem;
+    line-height: normal;
 }
-ul,li {
-    list-style: none;
-}
-
-.footer li {
-    float: left;
+.header {
+    text-align: center;
+    margin-top: 1rem;
 }
 
-.footer {
-    height: 60px;
-    background-color: #f5f5f5;
-    border-top: 1px solid #ddd;
-    padding-top: 20px;
+/*发现爆文页面*/
+.find-baowen-page .weui-btn {
+    margin: 0 1rem;
+    margin-top: 2rem;
 }
-

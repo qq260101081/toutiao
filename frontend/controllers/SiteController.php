@@ -25,7 +25,7 @@ class SiteController extends Controller
         }
 
         $user = Yii::$app->wechat->getUser();
-        print_r($user);
+        //print_r($user);
         return $this->render('index');
     }
 
