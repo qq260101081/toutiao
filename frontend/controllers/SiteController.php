@@ -17,6 +17,7 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
+
         if(! Yii::$app->wechat->isAuthorized())
         {
             //return $this->redirect(['weixin/index','location'=>'site/index']);
